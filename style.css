@@ -6,12 +6,12 @@ body{
 
 #game-board {
     display: grid;
-    grid-template-columns: repeat(20, 20px);
+    grid-template-columns: repeat(30, 30px);
 }
 
 .cell {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border: 1px solid #ccc;
 }
 

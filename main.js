@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const board = document.getElementById('game-board');
-    const gridSize = 20;
-    const cellSize = 20;
-    const snakeSpeed = 230; // мілісекунди
+    const gridSize = 30;
+    const cellSize = 30;
+    const snakeSpeed = 200; // мілісекунди
 
     let snake = [{ x: 10, y: 10 }];
     let food = generateFood();
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             isSnakeCollision()
         ) {
             clearInterval(gameInterval);
-            alert('Гра закінчена! Бали: ' + (snake.length - 1));
+            alert('Гра закінчена! Очки: ' + (snake.length - 1));
         }
     }
 
